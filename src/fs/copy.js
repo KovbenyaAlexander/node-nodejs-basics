@@ -6,8 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const copy = async () => {
-  const OLD_PATH = `${__dirname}\\files`;
-  const NEW_PATH = `${__dirname}\\files_copy`;
+  const OLD_PATH = `${__dirname}/files`;
+  const NEW_PATH = `${__dirname}/files_copy`;
 
   if ((await isFolderExist(NEW_PATH)) || !(await isFolderExist(OLD_PATH))) {
     throw new Error(`FS operation failed`);

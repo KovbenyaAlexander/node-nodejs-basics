@@ -6,8 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const rename = async () => {
-  const PATH_TO_WRONG_FILE = `${__dirname}\\files\\wrongFilename.txt`;
-  const PATH_TO_RIGHT_FILE = `${__dirname}\\files\\properFilename.md`;
+  const PATH_TO_WRONG_FILE = `${__dirname}/files/wrongFilename.txt`;
+  const PATH_TO_RIGHT_FILE = `${__dirname}/files/properFilename.md`;
 
   if (!(await isFileExist(PATH_TO_WRONG_FILE)) || (await isFileExist(PATH_TO_RIGHT_FILE))) {
     throw new Error(`FS operation failed`);

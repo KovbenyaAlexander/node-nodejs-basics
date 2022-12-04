@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const list = async () => {
-  const PATH = `${__dirname}\\files`;
+  const PATH = `${__dirname}/files`;
 
   try {
     const data = await readdir(PATH);

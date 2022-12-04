@@ -13,7 +13,7 @@ const performCalculations = async () => {
   for (let i = 0; i < cpus; i++) {
     workers.push(
       new Promise((resolve, reject) => {
-        const PATH_TO_WORKER = `${__dirname}\\worker.js`;
+        const PATH_TO_WORKER = `${__dirname}/worker.js`;
         const worker = new Worker(PATH_TO_WORKER, {
           workerData: i + 10,
         });

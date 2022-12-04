@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const remove = async () => {
-  const PATH = `${__dirname}\\files\\fileToRemove.txt`;
+  const PATH = `${__dirname}/files/fileToRemove.txt`;
 
   if (await isFileExist(PATH)) {
     rm(PATH);

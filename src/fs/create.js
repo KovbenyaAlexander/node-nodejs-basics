@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const create = async () => {
-  const PATH = `${__dirname}\\files\\fresh.txt`;
+  const PATH = `${__dirname}/files/fresh.txt`;
 
   if (await isFileExist(PATH)) {
     throw new Error(`FS operation failed`);

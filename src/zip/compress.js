@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compress = async () => {
-  const PATH = `${__dirname}\\files\\fileToCompress.txt`;
-  const DEST = `${__dirname}\\files\\archive.gz`;
+  const PATH = `${__dirname}/files/fileToCompress.txt`;
+  const DEST = `${__dirname}/files/archive.gz`;
   const gzip = createGzip();
 
   const rs = createReadStream(PATH);
